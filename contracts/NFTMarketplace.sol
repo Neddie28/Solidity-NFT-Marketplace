@@ -98,7 +98,7 @@ contract NFTMarketplace is ERC721URIStorage {
         );
     }
 
-    //FUNCTION FOR RESELL TOKEN
+    //FUNCTION FOR RESALE TOKEN
     function resellToken(uint256 tokenId, uint256 price) public payable {
         require(idToMarketItem[tokenId].owner == msg.sender, "Only item owner can perform this operation");
 
